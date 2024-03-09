@@ -1,56 +1,75 @@
-.main{
-    width: 100%;
-    height: 100vh;
-    background: linear-gradient(to top, rgba(62, 62, 209, 0.5)50%,rgb(45, 61, 94))50%;
-    background-position: center;
-    background-size: cover;
+/* General styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-.mahe{
-    text-align: center;
-    padding-top: 50px;
-}
-.markaz{
-    font-size: 60px;
-    color:white;
-}
-.logos{
-    text-align: center;
-    margin-top: -185px;
-    
-}
-.logo{
-    width: 640px;
-    height: 490px;
-}
-.btn{
-    text-align: center;
-    margin-top:-105px ;
-    
-}
-.btn button {
-    border-radius: 20px;
-    background-color: rgb(86, 110, 86);
-}
-.btn button a{
-    list-style: none;
-    text-decoration: none;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 50px;
-    color: white;
-}
-.btn button a:hover{
 
-     font-size: 51px;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
 }
-.black{
-    width: 100%;
-    height: 40px;
-    background-color: rgba(6, 48, 2, 0.664);
+
+.main {
+    text-align: center;
+    padding: 20px;
+}
+
+.mahe {
     margin-top: 40px;
 }
-.black2{
-    width: 100%;
-    height: 40px;
-    background-color: rgba(62, 92, 58, 0.664);
-    margin-top: -520px;
+
+.markaz {
+    font-size: 2.5em;
+    color: #333;
+}
+.logos{
+    margin-top: -90px;
+
+}
+.logo {
+    max-width: 100%;
+    height: auto;
+}
+
+.btn {
+    margin-top: -115px;
+}
+
+.btn button {
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+.btn button a{
+    text-decoration: none;
+
+}
+.btn button:hover {
+    background-color: #45a049;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .markaz {
+        font-size: 2em;
+    }
+
+    .btn button {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .markaz {
+        font-size: 1.5em;
+    }
+
+    .btn {
+        margin-top: 20px; /* Reduce margin for smaller devices */
+    }
 }
